@@ -195,8 +195,8 @@ PRODUCT_PACKAGES += \
     rmnetcli
 
 # Browser
-PRODUCT_PACKAGES += \
-    Gello
+#PRODUCT_PACKAGES += \
+#    Gello
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
@@ -235,8 +235,9 @@ PRODUCT_PACKAGES += \
     libmmjpeg_interface \
     libqomx_core \
     mm-qcamera-app \
-    Snap
-
+#    Snap
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.opa.eligible_device=true
 # Sensor & activity_recognition HAL
 TARGET_USES_NANOHUB_SENSORHAL := true
 NANOHUB_SENSORHAL_LID_STATE_ENABLED := true
@@ -304,6 +305,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=420
+    ro.extended.version=3.1
 
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.hwc.mdpcomp.enable=true
