@@ -154,4 +154,11 @@ TARGET_PER_MGR_ENABLED := true
 
 USE_CLANG_PLATFORM_BUILD := true
 
+# Enable workaround for slow rom flash
+BOARD_SUPPRESS_SECURE_ERASE := true
+
+# Audio effects for DSP Manager
+TARGET_USE_DEVICE_AUDIO_EFFECTS_CONF := true
+TARGET_IGNORE_VENDOR_AUDIO_EFFECTS_CONF := true
+
 -include vendor/lge/bullhead/BoardConfigVendor.mk
