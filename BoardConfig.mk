@@ -50,7 +50,7 @@ BOARD_KERNEL_CMDLINE += lpm_levels.sleep_disabled=1 msm_poweroff.download_mode=0
 
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
-BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
+#BOARD_NEEDS_VENDORIMAGE_SYMLINK := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 BOARD_USES_ALSA_AUDIO := true
