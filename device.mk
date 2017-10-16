@@ -194,10 +194,6 @@ PRODUCT_PACKAGES += \
     librmnetctl \
     rmnetcli
 
-# Browser
-PRODUCT_PACKAGES += \
-    Gello
-
 # GPS configuration
 PRODUCT_COPY_FILES += \
     device/lge/bullhead/gps.conf:system/etc/gps.conf
@@ -210,7 +206,7 @@ PRODUCT_PACKAGES += \
 # NFC packages
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    nfc_nci.bullhead \
+    nfc_nci.pn54x.default \
     NfcNci \
     Tag
 
